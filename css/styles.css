@@ -13,11 +13,12 @@ body {
   height: 100vh;
   background-color: #231f20;
   color: white;
+  font-size: 0.7em;
 }
 
 #board {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   margin: 0 auto;
   background-color: #231f20;
   color: #c55967;
@@ -57,6 +58,7 @@ body {
   margin-bottom: 16px;
   cursor: pointer;
   width: 200px;
+  
 }
 
 .button:active,
@@ -93,4 +95,19 @@ body {
 .button-hoverable:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+@media (max-width:1199px){
+#board {width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  background-color: #231f20;
+  color: #c55967;
+  border: 6px solid #c55967;
+  border-radius: 10px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+}
+
 }
